@@ -137,6 +137,9 @@ const particleOptions = {
 }
 
 const motionForce = (x, y) => {
+  return forces.disturbance(x, y, 20)
+}
+const motionForceT = (x, y) => {
   return forces.disturbance(x, y, 10)
 }
 
@@ -153,7 +156,7 @@ export default function Cube() {
           maxParticles={8000}
           particleOptions={particleOptions}
           mouseMoveForce={motionForce}
-          touchMoveForce={motionForce}
+          touchMoveForce={motionForceT}
           backgroundColor="transparent"
         />
       </ContentWrapper>

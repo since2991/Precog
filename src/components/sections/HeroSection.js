@@ -9,32 +9,31 @@ export default function HeroSection() {
     <DocWrapper>
       <Wrapper>
         <MiddleWrapper>
-
-        <ContentWrapper>
-          <TextWrapper>
-            <Text>
-              <Caption>Futures ecosystem</Caption>
-              <Title>Automated basis trade aggregator</Title>
-            </Text>
-            <ButtonWrapper>
-              <MainButton
-                src="/images/icons/paper.svg"
-                title="Lightpaper"
-                iconSize="24px"
-                color=" #413951"
+          <ContentWrapper>
+            <TextWrapper>
+              <Text>
+                <Caption>Futures ecosystem</Caption>
+                <Title>Automated basis trade aggregator</Title>
+              </Text>
+              <ButtonWrapper>
+                <MainButton
+                  src="/images/icons/paper.svg"
+                  title="Lightpaper"
+                  iconSize="24px"
+                  color=" #413951"
                 />
-              <MainButton
-                src="/images/icons/arrow.svg"
-                title="Join to waitlist"
-                bg={false}
-                iconSize="32px"
-                color="#F17171"
+                <MainButton
+                  src="/images/icons/arrow.svg"
+                  title="Join to waitlist"
+                  bg={false}
+                  iconSize="32px"
+                  color="#F17171"
                 />
-            </ButtonWrapper>
-          </TextWrapper>
-        <Cube />
-        </ContentWrapper>
-                </MiddleWrapper>
+              </ButtonWrapper>
+            </TextWrapper>
+            <Cube />
+          </ContentWrapper>
+        </MiddleWrapper>
       </Wrapper>
       <LowerTimer />
     </DocWrapper>
@@ -44,12 +43,12 @@ export default function HeroSection() {
 const DocWrapper = styled.div`
   background: #322d3d;
   height: 100vh;
+  overflow: hidden;
 `
 
 const Wrapper = styled.div`
   overflow: hidden;
   height: 100vh;
-  
 `
 const MiddleWrapper = styled.div`
   position: relative;
@@ -57,15 +56,18 @@ const MiddleWrapper = styled.div`
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  
-`;
+`
 
 const ContentWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 50px 130px 200px 130px;
+  padding: 130px 130px 200px 130px;
   display: grid;
   grid-template-columns: 670px auto;
+
+  @media screen and (min-width: 1440px) {
+    padding: 50px 130px 200px 130px;
+  }
 `
 
 const TextWrapper = styled.div`
