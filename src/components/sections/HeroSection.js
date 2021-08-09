@@ -63,7 +63,7 @@ const MiddleWrapper = styled.div`
 const ContentWrapper = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 130px 200px 130px;
+  padding: 50px 130px 200px 130px;
   display: grid;
   grid-template-columns: 670px auto;
 `
